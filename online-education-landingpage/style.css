@@ -1,0 +1,913 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: ffffff;
+}
+
+/* Navbar  */
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 3.5vw;
+  gap: 0.5vw;
+}
+
+.logo img {
+  width: 18%;
+  height: 5%;
+}
+
+.links {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+
+.logo h3 {
+  color: #bd5db7;
+  font-size: 2vw;
+}
+
+nav a {
+  padding-right: 3vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  color: #bd5db7;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav i {
+  display: none;
+  font-size: 2.4vw;
+  color: #84047c;
+}
+
+/* Home Section */
+
+.Home {
+  height: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+}
+
+.content h3 {
+  font-size: 2.5vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #bd5db7;
+  font-weight: 3vw;
+}
+
+.content h1 {
+  font-size: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #84047c;
+}
+
+.content p {
+  padding-top: 2vw;
+  width: 60%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 25px;
+  font-size: 1.4vw;
+}
+
+.content button {
+  width: 25%;
+  height: 3vw;
+  border-radius: 20px;
+  border: none;
+  margin-top: 2vw;
+  background-color: #bd5db7;
+  font-size: 1.2vw;
+  color: white;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: #84047c;
+}
+
+.image {
+  width: 45%;
+  height: 100%;
+}
+
+.image img {
+  width: 95%;
+}
+
+/* About Section */
+
+.About {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 7vw 10vw;
+}
+
+.head-para {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4vw;
+}
+
+.About h2 {
+  font-size: 3.2vw;
+  color: #84047c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.About p {
+  font-size: 1.5vw;
+  color: #555;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 2.5vw;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  gap: 3vw;
+}
+
+.boxes .card {
+  width: 29%;
+  background-color: #ffffff;
+  border: 2px solid #bd5db7;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1.3vw;
+  margin-top: 3vw;
+  padding: 2.7vw;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+
+.boxes .card i {
+  font-size: 3vw;
+  color: #bd5db7;
+}
+
+.boxes .card h3 {
+  color: #84047c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+
+.boxes .card p {
+  color: #555;
+  font-size: 1.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 1.5vw;
+}
+
+.boxes .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxes .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section  */
+
+.Services {
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  padding: 6vw 10vw;
+}
+
+.Services h2 {
+  font-size: 3.2vw;
+  color: #84047c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  gap: 3vw;
+}
+
+.services-cards .card {
+  width: 29%;
+  background-color: #ffffff;
+  border: 2px solid #bd5db7;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1.3vw;
+  margin-top: 3vw;
+  padding: 2.7vw;
+  padding-top: 3vw;
+  padding-bottom: 4vw;
+  text-align: center;
+}
+
+.services-cards h3 {
+  color: #84047c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2vw;
+  margin-top: 0.6vw;
+}
+
+.services-cards p {
+  color: #555;
+  font-size: 1.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 1.5vw;
+}
+
+.services-cards .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* student section  */
+
+.Students {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 6vw 10vw;
+}
+
+.Students h2 {
+  font-size: 3.2vw;
+  color: #84047c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.student-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  gap: 3vw;
+}
+
+.student-cards .card {
+  width: 40%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 1.2vw;
+  margin-top: 3vw;
+  padding: 2.7vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+  text-align: center;
+}
+
+.student-cards p {
+  color: #555;
+  font-size: 1.5vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 1.5vw;
+  line-height: 2.5vw;
+}
+
+.student-cards h4 {
+  color: #bd5db7;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.8vw;
+  margin-top: 2vw;
+}
+
+.student-cards .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.student-cards .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* contact section */
+
+.Contact {
+  width: 100%;
+  height: auto;
+  background-color: #f4f4f4;
+  padding: 5vw;
+}
+
+.Contact h2 {
+  font-size: 3.2vw;
+  color: #84047c;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vw;
+  gap: 3vw;
+}
+
+input {
+  width: 40%;
+  height: 3vw;
+  border-radius: 6px;
+  border: 1.5px solid #bd5db7;
+  padding-left: 1vw;
+  outline: none;
+}
+
+textarea {
+  width: 40%;
+  height: 7vw;
+  border-radius: 6px;
+  border: 1.5px solid #bd5db7;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  outline: none;
+}
+
+button {
+  width: 40%;
+  height: 3vw;
+  border: none;
+  background-color: #bd5db7;
+  color: white;
+  border-radius: 6px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #84047c;
+  padding: 3vw 5vw;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  gap: 4vw;
+  padding-bottom: 4vw;
+  border-bottom: 1px solid white;
+}
+
+.footer-container h3 {
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-bottom: 1.3vw;
+}
+
+.footer-about {
+  width: 22%;
+}
+
+.footer-about p {
+  font-size: 1.2vw;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2vw;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3vw;
+  font-size: 1.2vw;
+}
+
+.footer-contact {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+}
+
+.footer-follow {
+  text-align: center;
+}
+
+.footer-bottom {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3vw;
+  padding-bottom: 0.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2vw;
+}
+
+.social-icons img {
+  width: 2vw;
+}
+
+/* mobile responsive code */
+
+@media (max-width: 576px) and (orientation: portrait) {
+  /* home section media querey */
+
+  nav {
+    height: 90px;
+  }
+
+  .logo h3 {
+    font-size: 6vw;
+  }
+
+  .logo img {
+    width: 22%;
+    padding-left: 2.5vw;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav i {
+    font-size: 7vw;
+    padding-right: 4vw;
+    display: block;
+  }
+
+  .Home {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+    padding-left: 6vw;
+    padding-top: 6vw;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .content h3,
+  h1 {
+    line-height: 12vw;
+  }
+
+  .content h3 {
+    font-size: 11vw;
+  }
+  .content h1 {
+    font-size: 14vw;
+  }
+
+  .content p {
+    width: 90%;
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+    padding-top: 5vw;
+  }
+
+  .content button {
+    width: 37%;
+    height: 10vw;
+    border-radius: 30px;
+    font-size: 3.4vw;
+    margin-top: 5vw;
+  }
+
+  .content button:hover {
+    background-color: #84047c;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  /* about section media querey */
+
+  .About {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .head-para {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4vw;
+  }
+
+  .head-para h2 {
+    font-size: 10vw;
+  }
+
+  .head-para p {
+    font-size: 4.5vw;
+    line-height: 5vw;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 6vw;
+  }
+
+  .boxes .card {
+    width: 90%;
+    height: 35%;
+    text-align: center;
+    padding-top: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 17vw;
+    border-radius: 20px;
+  }
+
+  .boxes .card h3 {
+    /* width: 100% ; */
+    font-size: 7vw;
+  }
+
+  .boxes .card i {
+    font-size: 8vw;
+  }
+
+  .boxes .card p {
+    font-size: 4.5vw;
+    line-height: 5vw;
+  }
+
+  .boxes .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .boxes .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* services section media querey */
+
+  .Services {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Services h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 10vw;
+  }
+
+  .services-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 6vw;
+  }
+
+  .services-cards .card {
+    width: 90%;
+    height: 35%;
+    text-align: center;
+    padding-top: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 16vw;
+    border-radius: 20px;
+  }
+
+  .services-cards h3 {
+    font-size: 7vw;
+  }
+
+  .services-cards p {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    padding-top: 2vw;
+  }
+
+  /* student section media querey */
+
+  .Students {
+    flex-direction: column;
+    height: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .Students h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 9vw;
+  }
+
+  .student-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 6vw;
+  }
+
+  .student-cards .card {
+    width: 90%;
+    height: 35%;
+    text-align: center;
+    padding-top: 8vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 14vw;
+    border-radius: 20px;
+  }
+
+  .student-cards p {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    padding-top: 2vw;
+  }
+
+  .student-cards h4 {
+    font-size: 5.5vw;
+    margin-top: 5vw;
+  }
+
+  .student-cards .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .student-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Contact section media querey */
+
+  .Contact {
+    height: auto;
+  }
+
+  .Contact h2 {
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 9vw;
+  }
+
+  form {
+    margin-top: 3vw;
+  }
+
+  input {
+    width: 78%;
+    height: 5vh;
+    padding-left: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  input::placeholder {
+    font-size: 2.7vw;
+  }
+
+  textarea {
+    width: 78%;
+    height: 9vh;
+    padding-left: 2vw;
+  }
+
+  textarea::placeholder {
+    font-size: 2.7vw;
+  }
+
+  button {
+    width: 78%;
+    height: 5vh;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 3vw;
+  }
+
+  /* footer  */
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+  }
+
+  .footer-container h3 {
+    font-size: 4vw;
+    padding-bottom: 3vw;
+  }
+
+  .footer-container p {
+    font-size: 3vw;
+    line-height: 4.5vw;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-follow {
+    width: 100%;
+  }
+
+  .footer-container a {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+
+  .footer-contact p {
+    line-height: 5vw;
+  }
+
+  .footer-follow h3 {
+    text-align: left;
+  }
+
+  .social-icons {
+    gap: 2vw;
+  }
+
+  .social-icons img {
+    width: 5vw;
+  }
+
+  .footer-bottom {
+    padding-top: 5vw;
+    padding-bottom: 4vw;
+  }
+
+  .footer-bottom p {
+    font-size: 3vw;
+  }
+}
+
+/* media querey for Tablets */
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  nav {
+    height: 120px;
+  }
+
+  .logo h3 {
+    font-size: 3.2vw;
+  }
+
+  .links a {
+    font-size: 2.2vw;
+  }
+
+  .Home {
+    height: auto;
+    width: 100%;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .content h3 {
+    font-size: 3.7vw;
+    padding-top: 5vw;
+  }
+
+  .content h3,
+  h1 {
+    line-height: 4.5vw;
+  }
+
+  .content p {
+    font-size: 1.9vw;
+    width: 75%;
+    line-height: 2.5vw;
+  }
+
+  .content button {
+    width: 30%;
+    height: 4.3vw;
+    font-size: 1.3vw;
+    margin-bottom: 4vw;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  /* About Section */
+
+  .head-para h2 {
+    font-size: 4.5vw;
+  }
+
+  .head-para p {
+    font-size: 2vw;
+  }
+
+  /* Services Section  */
+
+  .Services h2 {
+    font-size: 4.5vw;
+  }
+
+  /* Student Section  */
+
+  .Students h2 {
+    font-size: 4.5vw;
+  }
+
+  /* Contact Section */
+
+  .Contact h2 {
+    font-size: 4.5vw;
+  }
+
+  input {
+    width: 45vw;
+    height: 48px;
+    font-size: 1.6vw;
+  }
+
+  textarea {
+    width: 45vw;
+    height: 100px;
+    font-size: 1.6vw;
+  }
+
+  button {
+    width: 45vw;
+    height: 48px;
+    font-size: 2vw;
+  }
+}
